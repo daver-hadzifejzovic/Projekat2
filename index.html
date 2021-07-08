@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naslov</title>
+
+    <link rel="stylesheet" href="style.css">
+
+ <!-- Font Awsome -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+<!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+    <div class="pozadina">
+        <img src="./backg.jpg" width="100%">
+    </div>
+    <div class="pozadinazam">
+        <img src="./pozadina.png" width="100%">
+    </div>
+    <div class="heder">
+        <div class="logoime">
+            <img src="./slika1.png" height="100%">
+            <p style="margin:0;">Naslov</p>
+        </div>
+        <div class="ikonicazam">
+            <i class="fas fa-caret-square-down" onclick="klikMe()"></i>
+        </div>
+        <div class="linkovi">
+            <a href="">
+                <p>Home</p>
+            </a>
+            <a href="">
+                <p>Stranica1</p>
+            </a>
+            <a href="">
+                <p>Stranica2</p>
+            </a>
+            <a href="">
+                <p>Stranica3</p>
+            </a>
+            <a href="">
+                <p>Stranica4</p>
+            </a>
+        </div>
+    </div>
+    <div id="dropd" class="dropdownzam">
+        <a href="">
+            <p>Home</p>
+        </a>
+        <a href="">
+            <p>Stranica1</p>
+        </a>
+        <a href="">
+            <p>Stranica2</p>
+        </a>
+        <a href="">
+            <p>Stranica3</p>
+        </a>
+        <a href="">
+            <p>Stranica4</p>
+        </a>
+    </div>
+
+    <div class="kontejner">
+        <h1>Dobrodosli !</h1>
+        <p>Lorem ipsum dolor sit.</p>
+    </div>
+
+    <script>
+        function klikMe() {
+            var x = document.getElementById("dropd");
+            if (x.style.display === "none") {
+                x.style.display = "flex";
+            }
+            else {
+                x.style.display = "none";
+            }
+            
+        }
+    </script>
+    
+</body>
+</html>
